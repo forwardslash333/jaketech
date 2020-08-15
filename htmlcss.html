@@ -1,0 +1,470 @@
+﻿<!DOCTYPE html>      <!-- This is How you comment in HTML-->
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob's Learning page</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>                /*This is how you comment in css*/
+        @media (min-width: 500px) {
+            body{
+                background-color: #95afc0;
+                color: #120b2e;
+            }
+        }
+        @media (max-width: 499px) {
+            body{
+                background-color: #c7ecee;
+                color: #120b2e;
+            }
+        }
+        H2
+        {
+            color: #1b232e;
+            text-align: center;
+        }
+        div
+            {
+                background-color: slategray;
+                border: mediumslateblue solid 3px;
+                color: white;
+                font-family: Arial, sans-serif; /*Second font is a backup font in case browser does not have previous font*/
+                font-size: medium;
+                width: "device-width";
+                height: 'device-height';
+                padding: 50px; /* Space Between div container and content*/
+                margin: 50px; /* Space outside div container*/
+            }
+            table
+            {
+                border: solid slategray 3px;
+                background-color: lightslategray;
+                border-collapse:collapse; /*Merges borders to one*/
+            }
+            /*Multiple CSS selectors*/
+            td, th{
+                border: solid black 1px;
+            }
+            td{
+                background-color: lightsteelblue;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: normal;
+            }
+            th{                
+                background-color: skyblue;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bolder;
+            }
+            #learnid, #learnid2{ /*Ids and their multiple selection*/
+                color: #4f58c8;
+                text-align: center;
+            }
+            .learnclass, .learnclass2{
+                color: #4f58c8;
+                text-align: center;
+            }
+            /* Now CSS child selector */
+            ul > li {
+                font-family: Arial, Helvetica, sans-serif;
+                color: purple;
+            }
+            /*CSS attribute selector*/
+            a{
+                color: royalblue;
+            }
+            a[href="https://www.google.com"]{
+                color: navy;
+            }
+            button{
+                background-color: navy;
+                color: yellow;
+            }
+            button:hover {
+                background-color: tomato;
+                color: white;
+                border-radius: 3px;
+            }
+            #lambowidth{
+                width: 100%;                
+            }
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+    </style>    
+</head>
+<body>
+    <a href="http://blog.learnwithjake.tech/">View My Blog</a><br>
+    <p>This page consists of all Exercises I need to revise HTML and CSS.<br>
+    I am currently studying HTML and CSS from edX Harvard CS50 Course</p>
+    <H1>This is a heading, this uses a different stylesheet.</H1>
+    <H2>This is a smaller heading, and contains formatting.Here style is inlined to HTML page.</H2>
+    <H6 style="color: #006471; text-align: center;" >This is smallest heading,<br>
+         here styling is done on the exact line</H6>
+    Hello world this is my first web page.
+    Here is an ordered list:
+    <ol>
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+        <li>Fourth Item</li>
+    </ol>
+    Here is an unordered list:
+    <ul>
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+        <li>Fourth Item</li>
+    </ul>
+    <img src="images/Lambo.jpg" id= "lambowidth" alt="It's a freaking Lambo">
+    <p>
+    <a href='images/Lambo.jpg'>Click here for full size. </a><br>
+    Now it's time for a table:
+    </p>
+    <table>
+        <thead>
+            <tr>
+                <th>Serial</th>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>           
+        <tbody>
+            <tr>
+                <th>1</th>
+                <td>Natkhat</td>
+                <td>Rs.5</td>
+                <td>10</td>
+            </tr> 
+            <tr>
+                <th>2</th>
+                <td>Kurkure</td>
+                <td>Rs.10</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>Lays</td>
+                <td>Rs.20</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td>Dorito</td>
+                <td>Rs.25</td>
+                <td>4</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>Now its time to Get some input!</p>
+    <form style="text-align:center">
+        <input type='text' placeholder='Full Name' name='FullName'><br>
+        <input type='password' placeholder='Enter Your Password' name='password'><br>
+        Gender<br>
+        <input type='radio' value='m' name='Gender'>Male<br>
+        <input type='radio' value='f' name='Gender'>Female<br>
+        <input type='radio' value='o' name='Gender'>Other<br>
+        <input type='submit'>
+        <input name='country' list='country' placeholder='Your Country'>
+            <datalist id="country"> <!--The datalist element provides suggestions whereas
+                the select element asks the user to select a value from the available list.
+                In case of datalist, user has the freedom to enter values that is not in the list. 
+                But select does not allow the user to enter a value outside the list.-->
+                <option value="Afghanistan" />
+                <option value="Albania" />
+                <option value="Algeria" />
+                <option value="American Samoa" />
+                <option value="Andorra" />
+                <option value="Angola" />
+                <option value="Anguilla" />
+                <option value="Antarctica" />
+                <option value="Antigua and Barbuda" />
+                <option value="Argentina" />
+                <option value="Armenia" />
+                <option value="Aruba" />
+                <option value="Australia" />
+                <option value="Austria" />
+                <option value="Azerbaijan" />
+                <option value="Bahamas" />
+                <option value="Bahrain" />
+                <option value="Bangladesh" />
+                <option value="Barbados" />
+                <option value="Belarus" />
+                <option value="Belgium" />
+                <option value="Belize" />
+                <option value="Benin" />
+                <option value="Bermuda" />
+                <option value="Bhutan" />
+                <option value="Bolivia" />
+                <option value="Bosnia and Herzegovina" />
+                <option value="Botswana" />
+                <option value="Bouvet Island" />
+                <option value="Brazil" />
+                <option value="British Indian Ocean Territory" />
+                <option value="Brunei Darussalam" />
+                <option value="Bulgaria" />
+                <option value="Burkina Faso" />
+                <option value="Burundi" />
+                <option value="Cambodia" />
+                <option value="Cameroon" />
+                <option value="Canada" />
+                <option value="Cape Verde" />
+                <option value="Cayman Islands" />
+                <option value="Central African Republic" />
+                <option value="Chad" />
+                <option value="Chile" />
+                <option value="China" />
+                <option value="Christmas Island" />
+                <option value="Cocos (Keeling) Islands" />
+                <option value="Colombia" />
+                <option value="Comoros" />
+                <option value="Congo" />
+                <option value="Congo, The Democratic Republic of The" />
+                <option value="Cook Islands" />
+                <option value="Costa Rica" />
+                <option value="Cote D'ivoire" />
+                <option value="Croatia" />
+                <option value="Cuba" />
+                <option value="Cyprus" />
+                <option value="Czech Republic" />
+                <option value="Denmark" />
+                <option value="Djibouti" />
+                <option value="Dominica" />
+                <option value="Dominican Republic" />
+                <option value="Ecuador" />
+                <option value="Egypt" />
+                <option value="El Salvador" />
+                <option value="Equatorial Guinea" />
+                <option value="Eritrea" />
+                <option value="Estonia" />
+                <option value="Ethiopia" />
+                <option value="Falkland Islands (Malvinas)" />
+                <option value="Faroe Islands" />
+                <option value="Fiji" />
+                <option value="Finland" />
+                <option value="France" />
+                <option value="French Guiana" />
+                <option value="French Polynesia" />
+                <option value="French Southern Territories" />
+                <option value="Gabon" />
+                <option value="Gambia" />
+                <option value="Georgia" />
+                <option value="Germany" />
+                <option value="Ghana" />
+                <option value="Gibraltar" />
+                <option value="Greece" />
+                <option value="Greenland" />
+                <option value="Grenada" />
+                <option value="Guadeloupe" />
+                <option value="Guam" />
+                <option value="Guatemala" />
+                <option value="Guinea" />
+                <option value="Guinea-bissau" />
+                <option value="Guyana" />
+                <option value="Haiti" />
+                <option value="Heard Island and Mcdonald Islands" />
+                <option value="Holy See (Vatican City State)" />
+                <option value="Honduras" />
+                <option value="Hong Kong" />
+                <option value="Hungary" />
+                <option value="Iceland" />
+                <option value="India" />
+                <option value="Indonesia" />
+                <option value="Iran, Islamic Republic of" />
+                <option value="Iraq" />
+                <option value="Ireland" />
+                <option value="Israel" />
+                <option value="Italy" />
+                <option value="Jamaica" />
+                <option value="Japan" />
+                <option value="Jordan" />
+                <option value="Kazakhstan" />
+                <option value="Kenya" />
+                <option value="Kiribati" />
+                <option value="Korea, Democratic People's Republic of" />
+                <option value="Korea, Republic of" />
+                <option value="Kuwait" />
+                <option value="Kyrgyzstan" />
+                <option value="Lao People's Democratic Republic" />
+                <option value="Latvia" />
+                <option value="Lebanon" />
+                <option value="Lesotho" />
+                <option value="Liberia" />
+                <option value="Libyan Arab Jamahiriya" />
+                <option value="Liechtenstein" />
+                <option value="Lithuania" />
+                <option value="Luxembourg" />
+                <option value="Macao" />
+                <option value="Macedonia, The Former Yugoslav Republic of" />
+                <option value="Madagascar" />
+                <option value="Malawi" />
+                <option value="Malaysia" />
+                <option value="Maldives" />
+                <option value="Mali" />
+                <option value="Malta" />
+                <option value="Marshall Islands" />
+                <option value="Martinique" />
+                <option value="Mauritania" />
+                <option value="Mauritius" />
+                <option value="Mayotte" />
+                <option value="Mexico" />
+                <option value="Micronesia, Federated States of" />
+                <option value="Moldova, Republic of" />
+                <option value="Monaco" />
+                <option value="Mongolia" />
+                <option value="Montserrat" />
+                <option value="Morocco" />
+                <option value="Mozambique" />
+                <option value="Myanmar" />
+                <option value="Namibia" />
+                <option value="Nauru" />
+                <option value="Nepal" />
+                <option value="Netherlands" />
+                <option value="Netherlands Antilles" />
+                <option value="New Caledonia" />
+                <option value="New Zealand" />
+                <option value="Nicaragua" />
+                <option value="Niger" />
+                <option value="Nigeria" />
+                <option value="Niue" />
+                <option value="Norfolk Island" />
+                <option value="Northern Mariana Islands" />
+                <option value="Norway" />
+                <option value="Oman" />
+                <option value="Pakistan" />
+                <option value="Palau" />
+                <option value="Palestinian Territory, Occupied" />
+                <option value="Panama" />
+                <option value="Papua New Guinea" />
+                <option value="Paraguay" />
+                <option value="Peru" />
+                <option value="Philippines" />
+                <option value="Pitcairn" />
+                <option value="Poland" />
+                <option value="Portugal" />
+                <option value="Puerto Rico" />
+                <option value="Qatar" />
+                <option value="Reunion" />
+                <option value="Romania" />
+                <option value="Russian Federation" />
+                <option value="Rwanda" />
+                <option value="Saint Helena" />
+                <option value="Saint Kitts and Nevis" />
+                <option value="Saint Lucia" />
+                <option value="Saint Pierre and Miquelon" />
+                <option value="Saint Vincent and The Grenadines" />
+                <option value="Samoa" />
+                <option value="San Marino" />
+                <option value="Sao Tome and Principe" />
+                <option value="Saudi Arabia" />
+                <option value="Senegal" />
+                <option value="Serbia and Montenegro" />
+                <option value="Seychelles" />
+                <option value="Sierra Leone" />
+                <option value="Singapore" />
+                <option value="Slovakia" />
+                <option value="Slovenia" />
+                <option value="Solomon Islands" />
+                <option value="Somalia" />
+                <option value="South Africa" />
+                <option value="South Georgia and The South Sandwich Islands" />
+                <option value="Spain" />
+                <option value="Sri Lanka" />
+                <option value="Sudan" />
+                <option value="Suriname" />
+                <option value="Svalbard and Jan Mayen" />
+                <option value="Swaziland" />
+                <option value="Sweden" />
+                <option value="Switzerland" />
+                <option value="Syrian Arab Republic" />
+                <option value="Taiwan, Province of China" />
+                <option value="Tajikistan" />
+                <option value="Tanzania, United Republic of" />
+                <option value="Thailand" />
+                <option value="Timor-leste" />
+                <option value="Togo" />
+                <option value="Tokelau" />
+                <option value="Tonga" />
+                <option value="Trinidad and Tobago" />
+                <option value="Tunisia" />
+                <option value="Turkey" />
+                <option value="Turkmenistan" />
+                <option value="Turks and Caicos Islands" />
+                <option value="Tuvalu" />
+                <option value="Uganda" />
+                <option value="Ukraine" />
+                <option value="United Arab Emirates" />
+                <option value="United Kingdom" />
+                <option value="United States" />
+                <option value="United States Minor Outlying Islands" />
+                <option value="Uruguay" />
+                <option value="Uzbekistan" />
+                <option value="Vanuatu" />
+                <option value="Venezuela" />
+                <option value="Viet Nam" />
+                <option value="Virgin Islands, British" />
+                <option value="Virgin Islands, U.S" />
+                <option value="Wallis and Futuna" />
+                <option value="Western Sahara" />
+                <option value="Yemen" />
+                <option value="Zambia" />
+                <option value="Zimbabwe" />
+    </datalist>
+    </form>
+    Wanna play Tic Tac Toe?? <br>
+    <a href="files/Jacob_Tic_Tac_Toe.exe">Download Here</a><br>
+    If you see error 403 forbidden while clicking dowload link<br>
+    That means this site is still on a free web hosting service.<br>
+    <br>
+    <br>
+    Now its time to use some div. 
+    <div>
+        Hello world.
+    </div><br>
+    <H3 id="learnid">Sample Text for Id</H3><br>
+    <h3 id="learnid2">multiple css selectors for Ids</h3><br>
+    <h3 class="learnclass">Random heading for practicing class</h3><br>
+    <h3 class="learnclass">Random heading 2 for practicing class</h3><br>
+    <h3 class="learnclass2">Random heading for practicing multiple classes</h3><br>
+    <h3 class="learnclass2">Random heading 2 for practicing classes</h3><br>
+    <ol>
+        <li>Random element 1</li>
+        <li>Random element 2</li>
+        <ul>
+            <li>unordered element1</li>
+            <ol>
+                <li>without > arrow selector this would also be purple</li>
+                <li>without > arrow selector this would also be purple</li>
+                <li>without > arrow selector this would also be purple</li>
+            </ol>
+            <li>unordered element2</li>
+            <li>unordered element3</li>
+        </ul>
+        <li>Random element 3</li>
+        <li>Random element 4</li>
+    </ol>
+    <br>
+    Above was an example of child selector<br>
+    Here are some links which show an example of css attribute selector:<br>
+    <a href="https://www.amazon.com">Amazon</a></li><br>
+    <a href="https://www.google.com">Google</a></li><br>
+    <a href="https://www.facebook.com">Facebook</a></li><br>
+    <button href="https://www.google.com/" id= 'domm'>Click me</button><br>
+    <p>
+        The button changes colour to orange when hovered with mouse<br>
+        In a mobile screen touch this button and it will turn orange<br>
+        Touch somewhere else to turn it back to blue.<br><br><br>
+        The website is reponsive now with this line in head.<br>
+        <\(Remove backslash)meta name="viewport" content="width=device-width, initial-scale=1.0"><br>
+        Try to open this website on different screens the lambo image and hello world
+        will adjust.<br>
+        <br>
+        Using media query the background color of this page is wheat till 499px<br>
+        then color changes on 500px and above to whitesmoke. Try Ctrl+scroll or pinch zoom out :-) .<br>
+
+    </p>
+    It was a great journey! Now time for some javascript.<br>
+    <a href="jsindex.html" target="_blank">Click here</a>
+</body>
+</html>

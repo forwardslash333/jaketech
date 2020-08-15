@@ -1,0 +1,107 @@
+body{
+    background-color: grey;
+}
+.navbar {
+margin-top: 0px;
+margin-right: 10px;
+width: 100%;
+background-color: #555;
+font-family: Comfortaa, sans-serif;
+overflow: auto;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+border-radius: 5px;
+}
+
+/* Navbar links */
+.navbar a {
+float: left;
+text-align: center;
+padding: 12px;
+color: lightgray;
+text-decoration: none;
+font-size: 17px;
+border-radius: 5px;
+text-shadow: 1px 1px 2px #000;
+}
+#jnavbar{
+    padding: unset;
+    justify-content: unset;
+
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(199, 199, 199, 0.281));
+box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+color: rgb(233, 233, 233);
+}
+
+.active {
+background-color: #2ab1ffc9;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+.navbar a, #jnavbar {
+    float: none;
+    display: block;
+}
+h1{
+    text-align: center;
+}
+}
+h1{
+    font-family: Comfortaa, sans-serif;
+    color: rgba(245, 245, 245, 0.911);
+    text-shadow: 0px 2px 3px rgb(0, 0, 0);
+    padding: 10px;
+}
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2px ;
+    border-collapse: collapse;
+    background-color: darkgrey; 
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px black;
+    width: 98%;
+}
+.container, .container1 {
+    display: inline-block;
+    border: 200px;
+    box-sizing: border-box;
+    border-radius: 10px;            
+    background-color: #00a2ff7a;
+    font-size: 20px;
+    margin: 10px;
+    max-width: 300px;
+    padding: 15px;
+    padding-top: 5px;   
+    color: rgba(245, 245, 245, 0.815);
+    font-family: Roboto, Arial;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+}
+.container1:hover{
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(199, 199, 199, 0.281));
+    box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    color: rgb(233, 233, 233);
+}
+body{
+    border: 10px;
+    padding: 10px;
+}
+p{
+    padding: 1px ;
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+#rc{
+    width: 98%;
+    padding-top: 15px;
+    max-width: none;
+}
