@@ -107,3 +107,7 @@ h3{
     padding-top: 15px;
     max-width: none;
 }
+
+a{
+    text-decoration: none;
+}
